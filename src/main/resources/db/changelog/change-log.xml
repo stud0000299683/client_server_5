@@ -13,7 +13,19 @@
                  splitStatements="true"
                  stripComments="true"
         />
-        <comment>Создание первой таблицы</comment>
+        <comment>Создание таблицы</comment>
+    </changeSet>
+
+    <changeSet runAlways="true" author="chamorsev" id="script2" dbms="postgresql">
+        <sqlFile dbms="postgresql"
+                 path="scripts/script2.sql"
+                 encoding="UTF-8"
+                 endDelimiter="/"
+                 relativeToChangelogFile="true"
+                 splitStatements="true"
+                 stripComments="true"
+        />
+        <comment>Добавление данных</comment>
     </changeSet>
 
 </databaseChangeLog>
